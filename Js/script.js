@@ -15,3 +15,24 @@ function saveNotes(){
     });
     localStorage.setItem("notes", JSON.stringify(notes));
 }
+
+//buat catatan baru
+function createNote(text = ""){
+    const noteDiv = document.createElement("div");
+    noteDiv.className = "note";
+
+    const textarea = document.createElement(textarea);
+    textarea.value = text;
+
+    const deleteBtn = ducument.createElement("span");
+    deleteBtn.innerHTML = "❌";
+    deleteBtn.className = "delete";
+    deleteBtn.onclick = () => {
+       noteDiv.remove();
+       saveNotes(); 
+    };
+
+    noteDiv.appendChild(deleteBtn);
+    noteDiv.appendChild(textarea);
+    notesContainer.appendChild(noteDiv);
+}
