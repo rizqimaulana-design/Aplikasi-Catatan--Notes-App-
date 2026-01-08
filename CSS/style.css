@@ -1,21 +1,21 @@
-body{
+body {
     font-family: Arial, sans-serif;
     background: #f4f4f4;
 }
 
-.container{
-    width: 400px;
-    margin: 40x auto;
+.container {
+    width: 300px;
+    margin: 40px auto;  
     background: white;
-    padding: 20px;
-    border-radius: 8px;
+    padding: 50px;
+    border-radius: 10px;
 }
 
-h1{
+h1 {
     text-align: center;
 }
 
-#addnote{
+#addNote {  
     width: 100%;
     padding: 10px;
     margin-bottom: 15px;
@@ -25,15 +25,15 @@ h1{
     cursor: pointer;
 }
 
-.note{
-    background: #fff8b3;
-    padding: 10px;
+.note {
+    background: #eef591;
+    padding: 20px;
     margin-bottom: 10px;
     border-radius: 5px;
     position: relative;
 }
 
-.note textarea{
+.note textarea {
     width: 100%;
     border: none;
     resize: none;
@@ -41,9 +41,9 @@ h1{
     font-size: 14px;
 }
 
-.delete{
+.delete {
     position: absolute;
-    top: 5px;
+    top: 6px;
     right: 8px;
     cursor: pointer;
     color: red;
